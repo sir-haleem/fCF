@@ -155,8 +155,6 @@ body {
     color: rgba(212, 19, 13, .8);
 }
 
-
-
 .ui.btn-color:hover{
     background: rgba(212, 19, 13, .7);
     color: whitesmoke;
@@ -170,7 +168,12 @@ body {
 
 
     .ui.segment.content-container {
-        margin-top: 2.5rem;
+        margin-top: 2.8rem;
+        /*padding-top: 0rem;*/
+    }
+
+    .ui.segment.banner {
+        margin-top: 0;
     }
 
 
@@ -192,6 +195,23 @@ body {
 @media (max-width: 992px) {
     .ui.segment.post.box.cont, .ui.menu.main-nav.computer-only {
         display: none;
+    }
+
+    .ui.segment.content-container {
+        padding-top: 2.8rem;
+        
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ui.segment.notification-content-container {
+        padding: 0px;
+        padding-top: 2.5rem 
+    }
+
+    .ui.segment.notification-content-container > .ui.grid > .row > .column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     
