@@ -164,7 +164,7 @@ body {
 
 /* For mobile screen below 992px*/
 @media (max-width: 992px) {
-    .ui.segment.post.box.cont {
+    .ui.segment.post.box.cont, .ui.menu.main-nav.computer-only {
         display: none;
     }
 
