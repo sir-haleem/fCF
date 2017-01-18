@@ -147,9 +147,11 @@ body {
         display: none !important;
     }
 
+
     .ui.segment.content-container {
         margin-top: 0px;
     }
+
 
 
     .row.msg {
