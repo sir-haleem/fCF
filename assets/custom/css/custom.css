@@ -114,7 +114,6 @@ body {
 .card-post-info {
     border-top: 1.5px solid rgba( 64, 131, 202, .9);
     /*color: rgba( 64, 131, 202, .9);*/
-    border-bottom: 1.5px solid rgba( 64, 131, 202, .35);
 }
 
 #chatLabel {
