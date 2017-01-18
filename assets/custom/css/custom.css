@@ -120,6 +120,10 @@ body {
     border-bottom: 1.5px solid rgba(0,128,128, .35);
 }
 
+#chatLabel {
+    cursor: pointer;
+}
+
 .card-post-more-info {
     border-top: 1.5px solid rgba(0,128,128, .35);
 }
@@ -132,7 +136,7 @@ body {
     padding-bottom: 0px;
 }
 
-.ui.forum-card .card-post-more-info:nth-child(n + 1) a {
+.ui.forum-card .card-post-more-info:nth-child(n + 1) {
     color: rgba( 0, 128, 128, .8);
 }
 
@@ -146,17 +150,22 @@ body {
     .ui.segment.content-container {
         margin-top: 0px;
     }
+
+
+    .row.msg {
+        cursor: pointer;
+    }
+
+    .row.msg:hover {
+        background-color: rgba( 0, 128, 128, .085);
+
+    }
 }
 
 /* For mobile screen below 992px*/
 @media (max-width: 992px) {
     .ui.segment.post.box.cont {
         display: none;
-    }
-
-    ui.grid column, ui.grid .row, ui.segment{
-        margin: 0px;
-        padding: 0px;
     }
 
     .ui.segment.content-container {
@@ -168,6 +177,15 @@ body {
 
         padding-top: 1rem !important;
     }
+
+    .ui.segment.related-favorite, .ui.forum-card:last-of-type {
+        margin-bottom: 1rem;
+    }
+
+    .ui.segment.lower-banner {
+        margin-bottom: 1rem;
+    }
+     
 }
 
 .ui.list.forum-list {
@@ -175,4 +193,30 @@ body {
     padding-top: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 8px;
+}
+
+footer {
+    margin-top: 1rem;
+    background: rgba(0, 128, 128, 1);
+    color: #FFF;
+}
+
+/* For Messages */
+
+.row.msg {
+    border-top: 1px solid gray;
+
+}
+
+.row.msg h4.ui.header.name {
+    margin: 0;
+    margin-bottom: .3rem;
+    border-bottom: .5px solid rgba(0, 0, 0, .075);
+    padding-bottom: .5rem;
+}
+
+.row.msg .metadata {
+    color: rgba(0, 0, 0, .45);
+    margin: .1rem 0;
+    font-size: .85rem;
 }
