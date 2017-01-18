@@ -5,23 +5,18 @@ body {
 .ui.menu.main-nav {
     margin: 0;
     /*background: rgba(37,46,48, .9);*/
-    background: teal;
-}
-
-@media screen and (max-width: 756px) {
-    .ui.menu.main-nav .container {
-    }
+    background: blue;
 }
 
 
 .ui.menu.main-nav .item {
-    color: rgba(255,255,255, .45);
+    color: rgba(255,255,255, .8);
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .ui.menu.main-nav .item:hover, .ui.menu.main-nav .item.active:hover, .ui.menu.main-nav .item i.inverted:hover   {
-    color: rgba(255,225, 255, .725);
+    color: rgba(255,225, 255, .9);
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
     -ms-transition: color .3s ease-in-out;
@@ -32,11 +27,6 @@ body {
 .ui.menu.main-nav .item.active{
     color: rgba(255,225, 255, .9);
     font-weight: bold;
-}
-
-.main-nav .right.icon.menu .item {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .main-nav .right.icon.menu .item .notification-count {
@@ -53,7 +43,7 @@ body {
 
 
 .main-nav .right.icon.menu .item > .input > input {
-    border: 1px solid whitesmoke;
+    border: 1px solid rgba( 65, 131, 212, .9);;
     color: whitesmoke;
     background: rgba(0,0, 0, .125);
 }
@@ -77,7 +67,8 @@ body {
 }
 
 .ui.segment.forum-card, .segment-bg, .ui.segment.segment-bg {
-    background-color: rgba( 0, 128, 128, .075);
+    /*background-color: rgba( 0, 128, 128, .075);*/
+    background: whitesmoke;
 }
 
 
@@ -91,15 +82,20 @@ body {
 }
 
 .card-post-title:hover, .breadcrumb.section-indicator a.section:hover {
-    color: rgba( 0, 128, 128, .9);
+    color: rgba( 64, 131, 202, .9);
 }
 
 .card-post-title, .breadcrumb.section-indicator a.section {
-    color: rgba( 0, 128, 128, .8);
+    color: rgba( 65, 131, 202, 1);
 }
 
 .ui.forum-card .personal.quote, .post-time, .section-indicator .active {
     color: rgba(0, 0, 0, .55);
+}
+
+.post-time, .post-views {
+    color: rgba(0, 0, 0, .50);
+    font-size: .85rem;
 }
 .ui.forum-card .personal.quote:before {
     content: '"';
@@ -116,16 +112,17 @@ body {
 }
 
 .card-post-info {
-    border-top: 1.5px solid teal;
-    border-bottom: 1.5px solid rgba(0,128,128, .35);
+    border-top: 1.5px solid rgba( 64, 131, 202, .9);
+    /*color: rgba( 64, 131, 202, .9);*/
+    border-bottom: 1.5px solid rgba( 64, 131, 202, .35);
 }
 
 #chatLabel {
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .card-post-more-info {
-    border-top: 1.5px solid rgba(0,128,128, .35);
+    border-top: 1.5px solid rgba( 64, 131, 202, .4);
 }
 
 .section-indicator {
@@ -136,8 +133,11 @@ body {
     padding-bottom: 0px;
 }
 
+
+
 .ui.forum-card .card-post-more-info:nth-child(n + 1) {
-    color: rgba( 0, 128, 128, .8);
+    color: rgba(0, 0, 0, .55);
+    font-size: .85rem;
 }
 
 /* For screen above 992px*/
@@ -160,8 +160,12 @@ body {
 
     .row.msg:hover {
         background-color: rgba( 0, 128, 128, .085);
-
     }
+
+    .main-nav .right.icon.menu .item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 
 /* For mobile screen below 992px*/
@@ -199,26 +203,48 @@ body {
 
 footer {
     margin-top: 1rem;
-    background: rgba(0, 128, 128, 1);
+    background: blue;
     color: #FFF;
 }
 
 /* For Messages */
 
 .row.msg {
-    border-top: 1px solid gray;
+    border-top: 1px solid rgba( 64, 131, 202, .9);
 
 }
 
 .row.msg h4.ui.header.name {
     margin: 0;
     margin-bottom: .3rem;
-    border-bottom: .5px solid rgba(0, 0, 0, .075);
+    border-bottom: .5px solid rgba( 64, 131, 202, .35);
     padding-bottom: .5rem;
 }
 
 .row.msg .metadata {
     color: rgba(0, 0, 0, .45);
     margin: .1rem 0;
+    font-size: .85rem;
+}
+
+/* Message.html */
+
+.chat-container .ui.grid .row:nth-child(n + 2) {
+    border-bottom: 1px solid rgba(0, 0, 0, .085);
+}
+
+.chat-container .ui.grid .row .column .ui.label {
+    font-weight: normal;
+    font-size: 1rem;
+    color: black;
+}
+
+.chat-container .ui.grid .row .column .ui.label .text {
+    text-align: left;
+}
+
+.chat-container .ui.grid .row .column .ui.label .metadata {
+    margin-top: .5rem;
+    color: rgba(0, 0, 0, .475);
     font-size: .85rem;
 }
