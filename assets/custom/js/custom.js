@@ -11,9 +11,6 @@
         on: 'click',
     });
 
-    $('nav.ui.top.fixed')
-  .sticky({
-  })
 ;
 
         

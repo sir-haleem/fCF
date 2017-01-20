@@ -53,16 +53,6 @@ body {
 }
 
 
-
-
-<<<<<<< HEAD
-.ui.basic.segment.content-container {
-    margin-top: 0rem;
-=======
-.content-container {
-    margin-top: 0px;
->>>>>>> parent of b407f4c... Fixed navbar mobile and desktop
-}
 .post.box.cont {
     background-color: rgba( 0, 128, 128, .15);
 }
@@ -180,7 +170,7 @@ body {
 
 
     .ui.segment.content-container {
-        margin-top: 0px;
+        margin-top: 2.5rem;
     }
 
 
@@ -204,9 +194,7 @@ body {
         display: none;
     }
 
-    .ui.segment.content-container {
-        padding: 0;
-    }
+    
 
     section.eight.wide.computer.sixteen.wide.mobile.sixteen.wide.tablet.column {
         padding: 0px !important;
