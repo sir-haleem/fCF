@@ -5,7 +5,7 @@ body {
 .ui.menu.main-nav {
     margin: 0;
     /*background: rgba(37,46,48, .9);*/
-    background: blue;
+    background: rgba(212, 19, 13, .8);
 }
 
 
@@ -30,8 +30,9 @@ body {
 }
 
 .main-nav .right.icon.menu .item .notification-count {
-    background: rgba(212, 19, 13, 1);
-    color: #fff;
+    /*background: rgba(212, 19, 13, 1);*/
+    background: #fff;
+    color: #000;
     border-radius: 3px;
     padding: 1px 3px;
     font: 9px Verdana;
@@ -81,6 +82,14 @@ body {
     padding: 0px;
 }
 
+.ui.forum-card h3 {
+    margin-top: .3rem;
+}
+
+.ui.forum-card .ui.grid .row{
+    padding-top: 0px; 
+}
+
 .card-post-title:hover, .breadcrumb.section-indicator a.section:hover {
     color: rgba( 64, 131, 202, .9);
 }
@@ -93,9 +102,13 @@ body {
     color: rgba(0, 0, 0, .55);
 }
 
-.post-time, .post-views {
+.post-content {
+    color: rgba(0, 0, 0, .7)
+}
+
+.post-time, .post-views, .post-section-mobile, .ui.breadcrumb.section-indicator a, .section-indicator .active  {
     color: rgba(0, 0, 0, .50);
-    font-size: .85rem;
+    font-size: .8rem;
 }
 .ui.forum-card .personal.quote:before {
     content: '"';
@@ -112,7 +125,7 @@ body {
 }
 
 .card-post-info {
-    border-top: 1.5px solid rgba( 64, 131, 202, .9);
+    margin-top: .5rem;
     /*color: rgba( 64, 131, 202, .9);*/
 }
 
@@ -121,7 +134,7 @@ body {
 }
 
 .card-post-more-info {
-    border-top: 1.5px solid rgba( 64, 131, 202, .4);
+    /*border-top: 1.5px solid rgba( 64, 131, 202, .4);*/
 }
 
 .section-indicator {
@@ -139,6 +152,21 @@ body {
     font-size: .85rem;
 }
 
+.ui.btn-color, .ui.feed .ui.label {
+    background-color: rgba(212, 19, 13, .8);
+    color: whitesmoke;
+}
+
+.ui.feed .event .small.label i, .ui.list .ui.icon {
+    color: rgba(212, 19, 13, .8);
+}
+
+
+
+.ui.btn-color:hover{
+    background: rgba(212, 19, 13, .7);
+    color: whitesmoke;
+}
 /* For screen above 992px*/
 @media (min-width:992px) {
 
@@ -154,11 +182,10 @@ body {
 
 
     .row.msg {
-        cursor: pointer;
     }
 
     .row.msg:hover {
-        background-color: rgba( 0, 128, 128, .085);
+        background-color: rgba(212, 19, 13, .025);;
     }
 
     .main-nav .right.icon.menu .item {
@@ -202,21 +229,21 @@ body {
 
 footer {
     margin-top: 1rem;
-    background: blue;
+    background: rgba(212, 19, 13, .8);
     color: #FFF;
 }
 
 /* For Messages */
 
 .row.msg {
-    border-top: 1px solid rgba( 64, 131, 202, .9);
+    border-top: 1px solid rgba(212, 19, 13, .8);;
 
 }
 
 .row.msg h4.ui.header.name {
     margin: 0;
     margin-bottom: .3rem;
-    border-bottom: .5px solid rgba( 64, 131, 202, .35);
+    /*border-bottom: .5px solid rgba( 64, 131, 202, .35);*/
     padding-bottom: .5rem;
 }
 
