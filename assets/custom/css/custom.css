@@ -56,8 +56,13 @@ body {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .ui.basic.segment.content-container {
     margin-top: 0rem;
+=======
+.content-container {
+    margin-top: 0px;
+>>>>>>> parent of b407f4c... Fixed navbar mobile and desktop
 =======
 .content-container {
     margin-top: 0px;
