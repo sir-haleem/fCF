@@ -7,12 +7,10 @@
 
 
         // CODE GOES IN HERE!!!
-    jQ('nav.ui.computer-only i.large.announcement.icon').click(function(evt){
-        evt.preventDefault();
-        this.popup({
-                
-        });
-    })
+    jQ('nav.ui.computer-only i.large.announcement.icon').popup({
+        on: 'click',
+    });
+
         
 
 
