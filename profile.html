@@ -1,1 +1,987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head></head>
+    <title>Forum Chat Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/Semantic-UI/semantic.min.css" rel="stylesheet">
+    <link href="./assets/custom/css/custom.css" rel="stylesheet">
+</head>
+<body>
+<main class="ui container-fluid">
 
+
+    <nav class="ui text top fixed menu main-nav mobile-only">
+        <div class="ui container">
+            <div class="left floated item">
+                <a href="#" class="item brand">
+                    FC
+                </a>
+            </div>
+            <div class="right icon menu">
+
+                <a href="./index.html" class=" item">
+                    <i class="large inverted feed icon"></i>
+                </a>
+                <a href="./messages.html" class="item">
+                    <i class="large mail outline icon">
+                    </i>
+
+                </a>
+                <a href="./notification.html" class="item">
+                    <i class="large announcement icon">
+                        <span class="notification-count">15</span>
+                    </i>
+                </a>
+                <a href="./profile.html" class="item">
+                    <i class="large user icon"></i>
+                    Halmat
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="ui text top fixed menu main-nav computer-only">
+        <div class="ui container">
+            <div class="left floated item">
+                <a href="#" class="item brand">
+                    FC
+                </a>
+            </div>
+            <div class="right icon menu">
+
+                <a href="./index.html" class=" item">
+                    <i class="large inverted feed icon"></i>
+                </a>
+                <a href="./messages.html" class="item">
+                    <i class="large mail outline icon">
+                    </i>
+
+                </a>
+                <a href="#" class="item">
+                    <i class="large announcement icon" 
+                        data-html='
+                        <div class="ui relaxed divided list">
+                            <div class="item">
+                                <i class="thumbs up middle aligned icon"></i>
+                                <div class="content">
+                                <a class="header">Haleem Liked your post</a>
+                                <div class="description">10 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="reply middle aligned icon"></i>
+                                <div class="content">
+                                <a class="header">dhtml18 replied your comment</a>
+                                <div class="description">22 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="comment middle aligned icon"></i>
+                                <div class="content">
+                                <a class="header">Haleem Liked your post</a>
+                                <div class="description">10 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="comment middle aligned icon"></i>
+                                <div class="content">
+                                <a class="header">Haleem Liked your post</a>
+                                <div class="description">10 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="comment middle aligned icon"></i>
+                                <div class="content">
+                                <a class="header">Haleem Liked your post</a>
+                                <div class="description">10 mins ago</div>
+                                </div>
+                            </div>
+                        </div>'
+                    >
+                        <span class="notification-count">15</span>
+                    </i>
+                    <div class="ui popup not-popup" data-html="<div class='ui feed'><div class='event'>
+                                <div class='label'>
+                                <img src='./assets/img/test.gif'>
+                                </div>
+                                <div class='content'>
+                                <div class='date'>
+                                    3 days ago
+                                </div>
+                                <div class='summary'>
+                                    You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+                                </div>
+                                </div>
+                            </div>
+                        </div>">
+                        
+                    </div>
+                </a>
+                <a href="./profile.html" class="item">
+                    <i class="large user icon"></i>
+                    Halmat
+                </a>
+
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" name="search" placeholder="search" class="">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="ui basic segment content-container">
+
+        <section class="ui stackable grid">
+            <section class="row">
+                <section class="four wide computer only column">
+
+                    <div class="ui segment segment-bg">
+                        <div class="ui grid">
+                            <div class="row">
+                                <div class="column">
+
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <i class="ui open folder big icon"></i>
+                                            <div class="content">
+                                                <h3 class="ui header">
+                                                    Forum
+                                                </h3>
+                                                <div class="description"> Something in here</div>
+                                                <!--Under Forum For Main Sections-->
+                                                <div class="list">
+                                                    <div class="item">
+                                                        <i class="ui large open folder icon"></i>
+                                                        <div class="content">
+                                                            <div class="header">Main Section</div>
+                                                            <div class="description"> Something in here</div>
+
+                                                            <!--Under Main Section for Subsection-->
+                                                            <div class="list">
+                                                                <div class="item">
+                                                                    <i class="ui folder icon"></i>
+                                                                    <div class="content">
+                                                                        <div class="header"><a href="#">Sub Section</a>
+                                                                        </div>
+                                                                        <div class="description"> Something in here
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="list">
+                                                                <div class="item">
+                                                                    <i class="ui folder icon"></i>
+                                                                    <div class="content">
+                                                                        <div class="header"><a href="#">Sub Section</a>
+                                                                        </div>
+                                                                        <div class="description"> Something in here
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="list">
+                                                                <div class="item">
+                                                                    <i class="ui folder icon"></i>
+                                                                    <div class="content">
+                                                                        <div class="header"><a href="#">Sub Section</a>
+                                                                        </div>
+                                                                        <div class="description"> Something in here
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--Ends Under Main Section-->
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list">
+                                                    <div class="item">
+                                                        <i class="ui large folder icon"></i>
+                                                        <div class="content">
+                                                            <div class="header"><a href="">Main Section</a></div>
+                                                            <div class="description"> Something in here</div>
+
+
+                                                            <!--Ends Under Main Section-->
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list">
+                                                    <div class="item">
+                                                        <i class="ui large folder icon"></i>
+                                                        <div class="content">
+                                                            <div class="header"><a href="">Main Section</a></div>
+                                                            <div class="description"> Something in here</div>
+
+
+                                                            <!--Ends Under Main Section-->
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Ends Under Forum-->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <h3 class="ui header">
+                                        Recent Activities
+                                    </h3>
+
+                                    <div class="ui feed">
+                                        <div class="event">
+                                            <div class="small label">
+                                                <div class="ui label">
+                                                    New
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">donjayzi</a> created a new <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui thumbs up icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> liked this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label">
+                                            <i class="ui reply icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> replied <a
+                                                        href="">a comment</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui comment icon"></i></div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">halmat</a> commented this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui thumbs up icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> liked this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui comment icon"></i></div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">halmat</a> commented this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label">
+                                                <div class="ui label">
+                                                    New
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">donjayzi</a> created a new <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="eight wide computer sixteen wide mobile sixteen wide tablet column">
+                    <div class="ui segment segment-bg mobile-forums-list">
+                        <div class="ui header">Forums</div>
+                        <div class="ui list forum-list">
+                            <div class="item">
+                                <strong>Main Section: </strong>
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ui list forum-list">
+                            <div class="item">
+                                <strong>Main Section: </strong>
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ui list forum-list">
+                            <div class="item">
+                                <strong>Main Section: </strong>
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span> |
+                                <span>
+                                    <i class="ui folder icon"></i>
+                                    <a href="#">Sub Section</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="ui basic segment segment-bg banner">
+                        Banner ads here
+
+                    </div>
+                    <div class="ui segment forum-profile segment-bg">
+                        <div class="ui grid">
+                            <div class="row">
+                                <div class="three wide computer six wide mobile column profile-picture">
+                                    <space>
+                                    <img class="ui circular small middle aligned image" src="./assets/img/test.gif">
+                                    </span>
+                                </div>
+                                <div class="six wide computer ten wide mobile column profile-details">
+                                    <h3 class="ui header">
+                                        Isiaka Aleem Aremu
+                                    </h3>
+
+                                    <div class="username">
+                                        @halmat 
+                                        <span style="color: green;">
+                                            <i class="ui small green circle icon"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="">
+                                        Member since <strong class="">Dec. 2012</strong>
+                                    </div>
+
+                                    <div class="">
+                                        Last Seen <strong class="">Today</strong>
+                                    </div>
+
+                                    
+
+                                    <div class="gender">
+                                        <strong>Male</strong>
+                                    </div>
+
+                                    <div class="ui tiny button btn-color mobile-only" tabindex="0">
+                                        
+                                        Follow 
+                                    </div>
+                                    <div class="ui tiny green button mobile-only" tabindex="0">
+                                        
+                                        Message 
+                                    </div>
+
+
+                                </div>
+
+                                <div class="seven wide computer only center aligned column computer follow">
+                                    <span class="ui tiny labeled icon button btn-color" tabindex="0">
+                                        <i class="rocket icon"></i>
+                                        Follow 
+                                    </span>
+                                    <span class="ui tiny green labeled icon button" tabindex="0">
+                                        <i class="mail icon"></i>
+                                        Message 
+                                    </span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="sixteen wide column row">
+                                <div class="center aligned column">
+                                    <div class="personal quote">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nisi similique accusantium sed, distinctio sunt!
+                                        
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three column row">
+                                <div class="center aligned column">
+                                    <div class="ui mini statistic">
+                                        <div class="value">
+                                            2,204
+                                        </div>
+                                        <div class="label">
+                                            Posts
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center aligned column">
+                                    <div class="ui mini statistic">
+                                        <div class="value">
+                                            2,204
+                                        </div>
+                                        <div class="label">
+                                            Comments
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center aligned column">
+                                    <div class="ui mini statistic">
+                                        <div class="value">
+                                            2,204
+                                        </div>
+                                        <div class="label">
+                                            Followers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="ui segment forum-card">
+                        <div class="ui grid">
+
+                            <div class="sixteen wide column row card-post-info">
+                                <div class="column">
+                                    <div class="ui grid">
+
+                                        <div class="eleven wide computer only column">
+
+                                            <div class="ui breadcrumb section-indicator">
+                                                <i class="folder open icon"></i>
+                                                <a class="section">Forums</a>
+                                                <i class="right arrow icon divider"></i>
+                                                <a href="#" class="section">Main Category</a>
+                                                <i class="right arrow icon divider"></i>
+                                                <div class="active section">Sub Category</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="five wide mobile only left aligned column">
+                                            <span class="post-section-mobile">
+                                                <a href="">Sub Section</a>
+                                            </span>
+                                        </div>
+                                        <div class="six wide mobile only center aligned column">
+                                            <span class="post-views">
+                                                12 Views
+                                            </span>
+                                        </div>
+
+                                        <div class="five wide computer only right aligned column">
+                                            <span class="post-time">
+                                                <i class="ui time icon"></i>
+                                                Jan 12, 2014
+                                            </span>
+                                        </div>
+                                        <div class="five wide mobile only right aligned column">
+                                            <span class="post-time">
+                                                Jan 12, 2014
+                                            </span>
+                                        </div>
+
+
+                                    </div>
+                                    <h3 class="ui header">
+                                        This is a sample Post Title. We don't know what next to handle afterwards.
+                                        Lol
+                                    </h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="three wide mobile two wide tablet two wide computer center aligned column">
+                                    <img src="./assets/img/test.gif" alt="" class="ui circular tiny image">
+                                </div>
+                                <div style="padding-left: 0; " class="fourteen wide computer only column">
+                                    <h4 class="ui header name">
+                                        <a href="./profile.html" class="name">
+                                            Isiaka Aleem Aremu
+                                        </a>
+                                        <span class="computer only">
+                                            <i class="green small circle icon"></i>
+                                            <span class="ui green left pointing label" data-username="halmat" id="chatLabel">
+                                                
+                                                <a href="" class="detail">
+                                                    <i class="chat icon"></i>
+                                                    Haleem
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </h4>
+
+
+                                    <div class="personal quote">
+                                        <em>My name is haleem</em>
+                                    </div>
+
+                                </div>
+
+                                <div style="padding-left: 0; " class="thirteen wide mobile fourteen wide tablet tablet only mobile only column">
+                                    <h4 class="ui header name">
+                                        <a href="./profile.html" class="name">
+                                            Isiaka Aleem Aremu
+                                        </a>
+                                        
+                                        <span class="ui green inverted small label">
+                                            <i class="chat icon"></i><a href="">Haleem</a>
+                                        </span>
+                                        
+                                    </h4>
+
+
+                                    <div class="personal quote">
+                                        <em>My name is haleem</em>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="sixteen wide column post-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet saepe voluptatem minus perspiciatis fugit commodi dicta deserunt culpa similique! 
+                                        <a href="./viewposts.html">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="two column mobile only row card-post-more-info">
+                                <div class="center aligned column">
+                                        <i class="ui comments icon"></i>
+                                        <strong>10 Comments</strong>
+                                </div>
+
+                                <div class="center aligned column">
+                                        <i class="ui like icon"></i>
+                                        <strong>10 Likes</strong>
+                                    
+                                </div>
+                            </div>
+                            <div class="three column computer only row card-post-more-info">
+                                <div class="center aligned column">
+                                        <i class="ui comments icon"></i>
+                                        <strong>10 Comments</strong>
+                                </div>
+                                
+                                <div class="center aligned column">
+                                        <i class="ui eye icon"></i>
+                                        <strong>10 Views</strong>
+                                </div>
+
+                                <div class="center aligned column">
+                                        <i class="ui like icon"></i>
+                                        <strong>10 Likes</strong>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui segment forum-card">
+                        <div class="ui grid">
+
+                            <div class="sixteen wide column row card-post-info">
+                                <div class="column">
+                                    <div class="ui grid">
+
+                                        <div class="eleven wide computer only column">
+
+                                            <div class="ui breadcrumb section-indicator">
+                                                <i class="folder open icon"></i>
+                                                <a class="section">Forums</a>
+                                                <i class="right arrow icon divider"></i>
+                                                <a href="#" class="section">Main Category</a>
+                                                <i class="right arrow icon divider"></i>
+                                                <div class="active section">Sub Category</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="five wide mobile only left aligned column">
+                                            <span class="post-section-mobile">
+                                                <a href="">Sub Section</a>
+                                            </span>
+                                        </div>
+                                        <div class="six wide mobile only center aligned column">
+                                            <span class="post-views">
+                                                12 Views
+                                            </span>
+                                        </div>
+
+                                        <div class="five wide computer only right aligned column">
+                                            <span class="post-time">
+                                                <i class="ui time icon"></i>
+                                                Jan 12, 2014
+                                            </span>
+                                        </div>
+                                        <div class="five wide mobile only right aligned column">
+                                            <span class="post-time">
+                                                Jan 12, 2014
+                                            </span>
+                                        </div>
+
+
+                                    </div>
+                                    <h3 class="ui header">
+                                        This is a sample Post Title. We don't know what next to handle afterwards.
+                                        Lol
+                                    </h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="three wide mobile two wide tablet two wide computer center aligned column">
+                                    <img src="./assets/img/test.gif" alt="" class="ui circular tiny image">
+                                </div>
+                                <div style="padding-left: 0; " class="fourteen wide computer only column">
+                                    <h4 class="ui header name">
+                                        <a href="./profile.html" class="name">
+                                            Isiaka Aleem Aremu
+                                        </a>
+                                        <span class="computer only">
+                                            <i class="green small circle icon"></i>
+                                            <span class="ui green left pointing label" data-username="halmat" id="chatLabel">
+                                                
+                                                <a href="" class="detail">
+                                                    <i class="chat icon"></i>
+                                                    Haleem
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </h4>
+
+
+                                    <div class="personal quote">
+                                        <em>My name is haleem</em>
+                                    </div>
+
+                                </div>
+
+                                <div style="padding-left: 0; " class="thirteen wide mobile fourteen wide tablet tablet only mobile only column">
+                                    <h4 class="ui header name">
+                                        <a href="./profile.html" class="name">
+                                            Isiaka Aleem Aremu
+                                        </a>
+                                        
+                                        <span class="ui green inverted small label">
+                                            <i class="chat icon"></i><a href="">Haleem</a>
+                                        </span>
+                                        
+                                    </h4>
+
+
+                                    <div class="personal quote">
+                                        <em>My name is haleem</em>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="sixteen wide column post-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet saepe voluptatem minus perspiciatis fugit commodi dicta deserunt culpa similique! 
+                                        <a href="./viewposts.html">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="two column mobile only row card-post-more-info">
+                                <div class="center aligned column">
+                                        <i class="ui comments icon"></i>
+                                        <strong>10 Comments</strong>
+                                </div>
+
+                                <div class="center aligned column">
+                                        <i class="ui like icon"></i>
+                                        <strong>10 Likes</strong>
+                                    
+                                </div>
+                            </div>
+                            <div class="three column computer only row card-post-more-info">
+                                <div class="center aligned column">
+                                        <i class="ui comments icon"></i>
+                                        <strong>10 Comments</strong>
+                                </div>
+                                
+                                <div class="center aligned column">
+                                        <i class="ui eye icon"></i>
+                                        <strong>10 Views</strong>
+                                </div>
+
+                                <div class="center aligned column">
+                                        <i class="ui like icon"></i>
+                                        <strong>10 Likes</strong>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui basic segment segment-bg">
+                        Banner ads here
+
+                    </div>
+
+                    <div class="ui segment segment-bg mobile-only related-favorite">
+                        <div class="ui stackable grid">
+
+                            <div class="row">
+                                <div class="column related-favorite">
+
+                                    <h3 class="ui header">
+                                        Suggested Profiles
+                                    </h3>           
+                                    
+                                    <div class="ui relaxed celled list">
+                                        <div class="item">
+                                            <img class="ui avatar image" src="./assets/img/test.gif">
+                                            <div class="content">
+                                            <a class="header">Rachel</a>
+                                            <div class="description">29 Posts</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="ui avatar image" src="./assets/img/user.svg">
+                                            <div class="content">
+                                            <a class="header">Lindsay</a>
+                                            <div class="description">1 Post</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="ui avatar image" src="./assets/img/user.svg">
+                                            <div class="content">
+                                            <a class="header">Matthew</a>
+                                            <div class="description">11 Post</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="ui avatar image" src="./assets/img/user.svg">
+                                            <div class="content">
+                                            <a class="header">Jenny Hess</a>
+                                            <div class="description">5 Posts</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="ui avatar image" src="./assets/img/user.svg">
+                                            <div class="content">
+                                            <a class="header">Veronika Ossi</a>
+                                            <div class="description">No Post Yet</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                                
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="column">
+                                    <h3 class="ui header">
+                                        Recent Activities
+                                    </h3>
+
+                                    <div class="ui feed">
+                                        <div class="event">
+                                            <div class="small label">
+                                                <div class="ui label">
+                                                    New
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">donjayzi</a> created a new <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui thumbs up icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> liked this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label">
+                                            <i class="ui reply icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> replied <a
+                                                        href="">a comment</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui comment icon"></i></div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">halmat</a> commented this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui thumbs up icon"></i></div>
+                                            <div class="content">
+
+                                                <div class="summary"><a href="" class="user">dhtml18</a> liked this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label"><i class="ui comment icon"></i></div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">halmat</a> commented this <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="small label">
+                                                <div class="ui label">
+                                                    New
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="summary"><a href="" class="user">donjayzi</a> created a new <a
+                                                        href="">post</a>
+                                                    <div class="date">1 hour ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+                <section class="four wide computer only column">
+                    <div class="ui segment segment-bg">
+                        <div class="ui grid">
+
+                            <div class="row">
+                                <div class="column">
+                                    Long rectangular side ads
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    Short rectangular side ads
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <div class="ui grid container">
+        <div class="row">
+            <div class=" column">
+                <div class="ui right floated horizontal list">
+  <div class="disabled item" href="#">© FC, Inc.</div>
+  <a class="item" href="#">Terms</a>
+  <a class="item" href="#">Privacy</a>
+  <a class="item" href="#">Contact</a>
+</div>
+<div class="ui horizontal list">
+  <a class="item" href="#">About Us</a>
+  <a class="item" href="#">Jobs</a>
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/custom/js/jquery-3.1.1.min.js"></script>
+<script src="./assets/Semantic-UI/semantic.min.js"></script>
+<script src="./assets/custom/js/custom.js"></script>
+</body>
+</html>
